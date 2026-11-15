@@ -9,6 +9,14 @@ const routes = [
   { path: '/payment', name: 'payment', component: () => import('../views/PaymentView.vue') },
   { path: '/ticket/:ref', name: 'ticket', component: () => import('../views/TicketView.vue') },
   { path: '/my-bookings', name: 'my-bookings', component: () => import('../views/MyBookingsView.vue') },
+  {
+    path: '/admin',
+    component: () => import('../views/admin/AdminLayout.vue'),
+    children: [
+      { path: '', name: 'admin-overview', component: () => import('../views/admin/AdminOverviewView.vue') },
+      { path: 'buses', name: 'admin-buses', component: () => import('../views/admin/AdminBusesView.vue') },
+    ],
+  },
 ]
 
 export default createRouter({
