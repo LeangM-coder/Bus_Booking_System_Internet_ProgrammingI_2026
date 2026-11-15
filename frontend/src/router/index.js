@@ -6,6 +6,8 @@ const routes = [
   { path: '/register', name: 'register', component: () => import('../views/RegisterView.vue') },
   { path: '/search', name: 'search', component: () => import('../views/SearchResultsView.vue') },
   { path: '/trips/:id/seats', name: 'seats', component: () => import('../views/SeatSelectionView.vue') },
+  { path: '/payment', name: 'payment', component: () => import('../views/PaymentView.vue') },
+  { path: '/ticket/:ref', name: 'ticket', component: () => import('../views/TicketView.vue') },
 ]
 
 export default createRouter({
