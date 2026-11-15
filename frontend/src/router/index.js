@@ -9,6 +9,7 @@ const routes = [
   { path: '/payment', name: 'payment', component: () => import('../views/PaymentView.vue') },
   { path: '/ticket/:ref', name: 'ticket', component: () => import('../views/TicketView.vue') },
   { path: '/my-bookings', name: 'my-bookings', component: () => import('../views/MyBookingsView.vue') },
+  { path: '/staff', name: 'staff', component: () => import('../views/StaffView.vue') },
   {
     path: '/admin',
     component: () => import('../views/admin/AdminLayout.vue'),
