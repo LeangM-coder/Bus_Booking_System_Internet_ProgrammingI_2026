@@ -15,6 +15,9 @@ const routes = [
     children: [
       { path: '', name: 'admin-overview', component: () => import('../views/admin/AdminOverviewView.vue') },
       { path: 'buses', name: 'admin-buses', component: () => import('../views/admin/AdminBusesView.vue') },
+      { path: 'schedules', name: 'admin-schedules', alias: 'routes', component: () => import('../views/admin/AdminSchedulesView.vue') },
+      { path: 'bookings', name: 'admin-bookings', component: () => import('../views/admin/AdminBookingsView.vue') },
+      { path: 'reports', name: 'admin-reports', component: () => import('../views/admin/AdminReportsView.vue') },
     ],
   },
 ]
