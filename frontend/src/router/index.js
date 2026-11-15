@@ -8,6 +8,7 @@ const routes = [
   { path: '/trips/:id/seats', name: 'seats', component: () => import('../views/SeatSelectionView.vue') },
   { path: '/payment', name: 'payment', component: () => import('../views/PaymentView.vue') },
   { path: '/ticket/:ref', name: 'ticket', component: () => import('../views/TicketView.vue') },
+  { path: '/my-bookings', name: 'my-bookings', component: () => import('../views/MyBookingsView.vue') },
 ]
 
 export default createRouter({
